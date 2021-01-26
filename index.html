@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banku panku</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loginPage">
+        <h1 class="text-center shadow rounded p-2">Welcome to webgrammer bank</h1>
+        <div class="submit-area">
+            <h4>Login</h4>
+            <input class="form-control" type="email" placeholder="enter your valid mail">
+            <br>
+            <input class="form-control" type="password" placeholder="enter your password">
+            <br>
+            <button id="loginBtn" class="btn btn-warning">Log in</button>
+        </div>
+    </div>
+    <div id="transactionArea">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="status deposit">
+                    <h2>$<span id="currentDeposit">00</span></h2>
+                    <h6>deposit</h6>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="status withdraw">
+                    <h2>$<span id="currentWithdraw">00</span></h2>
+                    <h6>withdraw</h6>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="status balance">
+                    <h2>$<span id="currentBalance">1000</span></h2>
+                    <h6>balance</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-5 shadow rounded p-3 ">
+                <h3>deposit</h3>
+                <input id="depositValue" class="form-control" type="text">
+                <br>
+                <button id="depositBtn" class="btn btn-success">deposit</button>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5 shadow rounded p-3">
+                <h3>withdraw</h3>
+                <input id="withdrawValue" class="form-control" type="text">
+                <br>
+                <button id="withdrawBtn" class="btn btn-success">withdraw</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="dhamaka.js"></script>
+</body>
+</html>
